@@ -1,11 +1,22 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="main.css">
-  <script src="bundle.js" async></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="bundle.js" async></script>
 </head>
+
 <body>
-  <h1 data-controller="example"></h1>
+    <div data-controller="slideshow">
+        <button data-action="slideshow#previous">←</button>
+        <button data-action="slideshow#next">→</button>
+
+        <div data-target="slideshow.slide" class="slide">🐵</div>
+        <div data-target="slideshow.slide" class="slide">🙈</div>
+        <div data-target="slideshow.slide" class="slide">🙉</div>
+        <div data-target="slideshow.slide" class="slide">🙊</div>
+    </div>
 </body>
+
 </html>
