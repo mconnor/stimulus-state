@@ -4,7 +4,9 @@ export default class extends Controller {
   static targets = [ "slide" ]
 
   initialize() {
-    this.showSlide(0)
+    //const index = parseInt(this.element.getAttribute("data-slideshow-index"))
+    const index = parseInt(this.data.get("index"))
+    this.showSlide(index)
   }
 
   next() {
@@ -21,4 +23,5 @@ export default class extends Controller {
       el.classList.toggle("slide--current", index == i)
     })
   }
+  
 }
