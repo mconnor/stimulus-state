@@ -5,7 +5,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@babel/core": "^7.5.5",
@@ -15,6 +17,8 @@
     "express": "^4.17.1",
     "stimulus": "^1.1.1",
     "webpack": "^4.39.2",
-    "webpack-dev-middleware": "^3.7.0"
-  }
+    "webpack-dev-middleware": "^3.7.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
