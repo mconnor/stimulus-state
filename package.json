@@ -14,7 +14,7 @@
     "babel-loader": "^8.0.6",
     "express": "^4.17.1",
     "stimulus": "^1.1.1",
-    "webpack": "^4.39.2",
+    "webpack": "^5.0.0",
     "webpack-dev-middleware": "^3.7.0"
   }
 }
